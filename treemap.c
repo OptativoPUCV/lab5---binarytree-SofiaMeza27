@@ -104,6 +104,14 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
             }
             tree -> current = tree -> current -> right;
         }
+        else if (result == 0)
+        {
+            if(tree -> current -> left == NULL)
+            {
+                return NULL;
+            }
+            tree -> current = tree -> current -> left;
+        }
     }
 }
 
