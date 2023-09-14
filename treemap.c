@@ -114,6 +114,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
         }
         keyComp = is_equal(tree, tree -> current -> pair -> key, key);
     }
+    return tree -> current -> pair;
 }
 
 
