@@ -102,6 +102,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
             {
                 return NULL;
             }
+            tree -> current = tree -> current -> left;
         }
     }
 }
