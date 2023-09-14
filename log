@@ -30,3 +30,17 @@ treemap.c:93:1: error: control reaches end of non-void function [-Werror=return-
 cc1.exe: all warnings being treated as errors
 Compilation failed
 ce9109f
+ju., 14 de sep. de 2023 17:13:15: 
+ treemap.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function 'searchTreeMap':
+treemap.c:97:13: error: unused variable 'result' [-Werror=unused-variable]
+         int result = tree -> lower_than(tree -> current -> pair -> key, key);
+             ^~~~~~
+treemap.c:99:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ca1ed12

@@ -86,9 +86,15 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
     {
         tree -> current = tree -> root;
         return tree -> root -> pair;
-    }else
+    }
+    else
     {
         tree -> current = tree -> root;
+    }
+
+    while(keyComp < 1)
+    {
+        int result = tree -> lower_than(tree -> current -> pair -> key, key);
     }
 }
 
