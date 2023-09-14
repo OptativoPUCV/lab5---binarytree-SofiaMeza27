@@ -112,6 +112,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
             }
             tree -> current = tree -> current -> left;
         }
+        keyComp = is_equal(tree, tree -> current -> pair -> key, key);
     }
 }
 
