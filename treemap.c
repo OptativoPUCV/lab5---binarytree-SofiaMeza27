@@ -95,6 +95,14 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
     while(keyComp < 1)
     {
         int result = tree -> lower_than(tree -> current -> pair -> key, key);
+
+        if(result == 1)
+        {
+            if(tree -> current -> left == NULL)
+            {
+                return NULL;
+            }
+        }
     }
 }
 
