@@ -127,3 +127,9 @@ treemap.c:59:5: error: suggest parentheses around assignment used as truth value
 cc1.exe: all warnings being treated as errors
 Compilation failed
 83a4540
+vi., 15 de sep. de 2023 13:18:51: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|6
+total_score: 15/70
+3b23933
