@@ -135,6 +135,20 @@ void removeNode(TreeMap * tree, TreeNode* node)
         }
         return;
     }
+
+    //Nodo con hijos:
+    if(node -> left == NULL && node -> right != NULL)
+    {
+        if(tree -> lower_than(node -> parent -> pair -> key, node -> pair -> key) == 1)
+        {
+            node -> parent -> right = node -> right;
+            node -> right -> parent = node -> parent;
+        }
+        return;
+    }
+
+
+
 }
 
 void eraseTreeMap(TreeMap * tree, void* key){
