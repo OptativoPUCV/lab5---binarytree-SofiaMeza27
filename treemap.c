@@ -233,8 +233,32 @@ Pair * upperBound(TreeMap * tree, void* key)
             {
                 break;
             }
+            tree -> current = tree -> current -> right;
+            continue;
+        }
+
+        if(tree -> lower_than(tree -> current -> pair -> key, key) == 0)
+        {
+            if(tree -> current -> left == NULL)
+            {
+                break;
+            }
+            tree -> current = tree -> current -> left;
+            uNode = tree -> current -> parent;
+            continue;
         }
     }
+
+    if(tree -> lower_than(tree -> current -> pair -> key, key) == 1 && uNode != NULL)
+    {
+        return uNode -> pair;
+    }
+
+    if(uNode == NULL)
+    {
+        return NULL;
+    }
+    return tree -> current -> pair;
 }
 
 Pair * firstTreeMap(TreeMap * tree) 
