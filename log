@@ -116,3 +116,14 @@ treemap.c:58:11: error: unused variable 'temp' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 5c78501
+vi., 15 de sep. de 2023 13:18:34: 
+ treemap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:59:5: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+     if(temp = NULL)
+     ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+83a4540
