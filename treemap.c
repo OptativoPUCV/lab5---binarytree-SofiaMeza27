@@ -83,18 +83,17 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
             }
             
         }
-        else
+        else if(result == 0)
         {
-            if(result == 0)
-            {
-                if(tree -> current -> left = NULL)
+           if(tree -> current -> left == NULL)
+           {
                 search = NULL;
-                rightOrLeft = 0;
-            }
-            else
-            {
+                rightOrLeft = 0; 
+           }
+           else
+           {
                 tree -> current = tree -> current -> left;
-            }
+           }
         }
     }
     TreeNode *new = createTreeNode(key, value);
