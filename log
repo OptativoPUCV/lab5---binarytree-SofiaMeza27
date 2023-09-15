@@ -332,3 +332,9 @@ treemap.c:255:9: error: 'else' without a previous 'if'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 1784f35
+vi., 15 de sep. de 2023 15:35:59: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  25|1
+total_score: 60/70
+63ee4c5
