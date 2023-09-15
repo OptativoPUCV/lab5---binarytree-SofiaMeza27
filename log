@@ -249,3 +249,9 @@ vi., 15 de sep. de 2023 14:55:30:
  tests:  15|4
 total_score: 25/70
 334c6c1
+vi., 15 de sep. de 2023 15:01:50: 
+ treemap.c | 16 ++++++++++++++--
+ 1 file changed, 14 insertions(+), 2 deletions(-)
+ tests:  16|4
+total_score: 30/70
+b7e5017
