@@ -74,8 +74,8 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
         {
             if(tree -> current -> right == NULL)
             {
-                search = NULL;
-                rightOrLeft = 1;
+                tree -> current -> right = newNode;
+                break;
             }
             else
             {
@@ -89,8 +89,8 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
             {
                 if(tree -> current -> left == NULL)
                 {
-                    search = NULL;
-                    rightOrLeft = 0;
+                    tree -> current -> left = newNode;
+                    break;
                 }
                 else
                 {
