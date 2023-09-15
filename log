@@ -133,3 +133,17 @@ vi., 15 de sep. de 2023 13:18:51:
  tests:  11|6
 total_score: 15/70
 3b23933
+vi., 15 de sep. de 2023 13:23:30: 
+ treemap.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:67:16: error: unused variable 'search' [-Werror=unused-variable]
+     TreeNode * search = tree -> current;
+                ^~~~~~
+treemap.c:64:9: error: unused variable 'rightOrLeft' [-Werror=unused-variable]
+     int rightOrLeft = 1;
+         ^~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+2cb89ae

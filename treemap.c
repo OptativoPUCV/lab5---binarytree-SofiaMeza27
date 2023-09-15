@@ -60,6 +60,13 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
     {
         return;
     }
+
+    int rightOrLeft = 1;
+
+    tree -> current = tree -> root;
+    TreeNode * search = tree -> current; 
+
+    
 }
 
 TreeNode * minimum(TreeNode * x){
