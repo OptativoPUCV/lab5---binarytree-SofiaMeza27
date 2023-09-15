@@ -224,8 +224,9 @@ Pair * upperBound(TreeMap * tree, void* key) {
     return NULL;
 }
 
-Pair * firstTreeMap(TreeMap * tree) {
-    return NULL;
+Pair * firstTreeMap(TreeMap * tree) 
+{
+    TreeNode *x = tree -> root; 
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
