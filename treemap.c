@@ -66,7 +66,10 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
     tree -> current = tree -> root;
     TreeNode * search = tree -> current; 
 
-    
+    while(search != NULL)
+    {
+        int result = tree -> lower_than(tree -> current -> pair -> key, key);;
+    }
 }
 
 TreeNode * minimum(TreeNode * x){
