@@ -220,8 +220,17 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
 }
 
 
-Pair * upperBound(TreeMap * tree, void* key) {
-    return NULL;
+Pair * upperBound(TreeMap * tree, void* key) 
+{
+    if(searchTreeMap(tree,key) != NULL)
+    {
+        return tree -> current -> pair;
+    }
+    else
+    {
+        tree -> current = tree -> root;
+        TreeNode * ub_node = tree -> current;
+    }
 }
 
 Pair * firstTreeMap(TreeMap * tree) 
