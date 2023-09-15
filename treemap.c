@@ -72,15 +72,32 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
 
         if(result == 1)
         {
-            if(tree -> current -> left == NULL)
+            if(tree -> current -> right == NULL)
             {
                 search = NULL;
                 rightOrLeft = 1;
             }
             else
             {
-                tree -> current = tree -> current -> left;
+                tree -> current = tree -> current -> right;
             }
+
+        }
+        else
+        {
+            if(result == 0)
+            {
+                if(tree -> current -> left == NULL)
+                {
+                    search = NULL;
+                    rightOrLeft = 0;
+                }
+                else
+                {
+                    tree -> current = tree -> current -> left;
+                }
+            }
+
         }
     }
 }
