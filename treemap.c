@@ -68,7 +68,20 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
 
     while(search != NULL)
     {
-        int result = tree -> lower_than(tree -> current -> pair -> key, key);;
+        int result = tree -> lower_than(tree -> current -> pair -> key, key);
+
+        if(result == 1)
+        {
+            if(tree -> current -> left == NULL)
+            {
+                search = NULL;
+                rightOrLeft = 1;
+            }
+            else
+            {
+                tree -> current = tree -> current -> left;
+            }
+        }
     }
 }
 
