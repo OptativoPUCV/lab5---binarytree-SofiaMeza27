@@ -198,3 +198,17 @@ treemap.c:64:9: error: unused variable 'rightOrLeft' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 9808e15
+vi., 15 de sep. de 2023 14:29:58: 
+ treemap.c | 40 +++-------------------------------------
+ 1 file changed, 3 insertions(+), 37 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:68:15: error: unused variable 'search' [-Werror=unused-variable]
+     TreeNode *search = tree -> current;
+               ^~~~~~
+treemap.c:65:9: error: unused variable 'rightOrLeft' [-Werror=unused-variable]
+     int rightOrLeft = 1;
+         ^~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+e6fc6b3
